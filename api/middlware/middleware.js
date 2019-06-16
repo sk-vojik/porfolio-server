@@ -8,7 +8,6 @@ const corsOptions = {
   credentials: true,
 }
 
-
 module.exports = server => {
   server.use(cors(corsOptions));
   server.use(helmet());
