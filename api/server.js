@@ -13,4 +13,4 @@ server.get("/", async (req, res) => {
 
 server.use("/api/projects", projectRoutes)
 
-module.exports = server
+module.exports = server;

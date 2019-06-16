@@ -5,7 +5,7 @@ pg.defaults.ssl = true;
 
 const localPGConnection = {
   host: "localhost", //change to postgres server
-  database: "users",
+  database: "projects",
   user: "", // Need credentials from user
   password: ""
 };
@@ -30,12 +30,7 @@ module.exports = {
   production: {
     client: "pg",
     connection: prodDbConnection,
-    pool: {
-      min: 2,
-      max: 10
-    },
     migrations: {
-      tableName: "knex_migrations",
       directory: "./data/migrations"
     },
     seeds: {
