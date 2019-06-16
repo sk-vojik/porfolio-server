@@ -7,7 +7,7 @@ const projectRoutes = require('./routes/projectRoutes');
 const server = express();
 middleware(server);
 
-server.get("/", (req, res) => {
+server.get("/", async (req, res) => {
   res.status(200).json({ api: "running" });
 });
 
